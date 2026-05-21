@@ -17,6 +17,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 body {
     font-family: "Inter", sans-serif;
     color: #222;
@@ -866,5 +867,8 @@ html{
     }
     .kontaktinfo h3{
         padding-bottom: 10px;
+    }
+    .zastobasmi{
+        background-image: url("slike/zastobasmimobitel.webp");
     }
 }
