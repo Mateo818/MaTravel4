@@ -345,6 +345,7 @@ footer p {
     height: 600px;
     overflow: hidden;
     position: relative;
+    contain: size layout paint;
 }
 
 .kutijaslajd{
@@ -355,7 +356,8 @@ footer p {
 }
 
 .slajd{
-    height: 600px;
+    height: 100%;
+    width: 100%;
     position: absolute;
     inset: 0;
     opacity: 0;
