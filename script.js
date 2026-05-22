@@ -29,28 +29,18 @@ document.addEventListener("click", (o)=>{
 
 let slajdovi = document.querySelectorAll(".slajd");
 let i = 0;
-function ucitajsliku(slide){
-    const img = slide.querySelector("img");
-    if(!img.src){
-        img.src = img.dataset.src;
-        img.srcset = img.dataset.srcset;
-    }
-}
 
-function pokazislajd(){
+function showSlide(){
     slajdovi.forEach(slide => {
         slide.classList.remove("active");
     });
     slajdovi[i].classList.add("active");
-    ucitajsliku(slajdovi[i]);
     i++;
     if(i >= slajdovi.length){
         i = 0;
     }
 }
-ucitajsliku(slajdovi[0]);
-pokazislajd();
-setInterval(pokazislajd, 4000);
+setInterval(showSlide, 4000);
 
 
 const a = document.querySelectorAll(".skriveno, .skriveno2");
