@@ -871,4 +871,16 @@ html{
     .zastobasmi{
         background-image: url("slike/zastobasmimobitel.webp");
     }
+    .lanzarote .zoom{
+    background-image: url("slike/lanzarote/lanzarotemobitel.webp");
+    }
+    .budimpesta .zoom{
+        background-image: url("slike/budimpesta/budimpestamobitel.webp");
+    }
+    .casablanca .zoom{
+        background-image: url("slike/casablanca/casablancamobitel.webp");
+    }
+    .venecija .zoom{
+        background-image: url("slike/venecija/venecijamobitel.webp");
+    }
 }
