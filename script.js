@@ -29,18 +29,27 @@ document.addEventListener("click", (o)=>{
 
 let slajdovi = document.querySelectorAll(".slajd");
 let i = 0;
+function ucitajsliku(){
+    const img = slide.querySelectorAll("img");
+    if(!img.src){
+        img.src = img.dataset.src;
+        img.srcset = img.dataset.srcset;
+    }
+}
 
-function showSlide(){
+function pokazislajd(){
     slajdovi.forEach(slide => {
         slide.classList.remove("active");
     });
     slajdovi[i].classList.add("active");
+    ucitajsliku(slajdovi[i]);
     i++;
     if(i >= slajdovi.length){
         i = 0;
     }
 }
-setInterval(showSlide, 4000);
+pkazislajd();
+setInterval(pokazislajd, 4000);
 
 
 const a = document.querySelectorAll(".skriveno, .skriveno2");
