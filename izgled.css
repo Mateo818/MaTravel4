@@ -222,17 +222,15 @@ footer p {
     z-index: 2;
     text-align: left;
 }
-.lanzarote .zoom{
-    background-image: url("slike/lanzarote/lanzarote.webp");
-}
-.budimpesta .zoom{
-    background-image: url("slike/budimpesta/budimpesta.webp");
-}
-.casablanca .zoom{
-    background-image: url("slike/casablanca/casablanca.webp");
-}
-.venecija .zoom{
-    background-image: url("slike/venecija/venecija.webp");
+.zoom{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+    z-index: 0;
 }
 .karticasadrzaj h3{
     font-size: 25px;
