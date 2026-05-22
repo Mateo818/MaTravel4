@@ -29,7 +29,7 @@ document.addEventListener("click", (o)=>{
 
 let slajdovi = document.querySelectorAll(".slajd");
 let i = 0;
-function ucitajsliku(){
+function ucitajsliku(slide){
     const img = slide.querySelector("img");
     if(!img.src){
         img.src = img.dataset.src;
@@ -48,6 +48,7 @@ function pokazislajd(){
         i = 0;
     }
 }
+ucitajsliku(slajdovi[0]);
 pokazislajd();
 setInterval(pokazislajd, 4000);
 
