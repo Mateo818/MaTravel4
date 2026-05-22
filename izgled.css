@@ -349,8 +349,9 @@ footer p {
 
 .kutijaslajd{
     width: 100%;
-    height: 100%;
+    height: 600px;
     position: relative;
+    contain: layout paint;
 }
 
 .slajd{
@@ -374,7 +375,8 @@ footer p {
 .slajd img{
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 600px;
+    display: block;
     transform: scale(1.05);
     transition: transform 1s ease;
     
