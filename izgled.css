@@ -572,25 +572,13 @@ video{
 .reverse{
     flex-direction: row-reverse;
 }
-.lanzarote{
-    background-image: url("slike/lanzarote/lanzarote.webp");
-}
 .lanzarote:hover{
     background-image: url("slike/lanzarote/lanzarote2.webp");
     transition: 0.5s ease-in-out;
 }
-.budimpesta{
-    background-image: url("slike/budimpesta/budimpesta.webp");
-}
 .budimpesta:hover{
     background-image: url("slike/budimpesta/budimpesta2.webp");
     transition: 0.5s ease-in-out;
-}
-.casablanca{
-    background-image: url("slike/casablanca/casablanca.webp");
-}
-.venecija{
-    background-image: url("slike/venecija/venecija.webp");
 }
 .venecija:hover{
     background-image: url("slike/venecija/IMG_3850.webp");
